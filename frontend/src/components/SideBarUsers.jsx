@@ -5,7 +5,7 @@ import SidebarSkeleton from "./skeletons/SidebarSkeleton";
 import { Users } from "lucide-react";
 import { useState } from "react";
 
-const Sidebar = () => {
+const SideBarUsers= () => {
   const { getUsers, users, selectedUser, setSelectedUser, isUsersLoading } = useChatStore();
 
   const { onlineUsers } = useAuthStore();
@@ -85,4 +85,4 @@ const Sidebar = () => {
     </aside>
   );
 };
-export default Sidebar;
+export default SideBarUsers;
